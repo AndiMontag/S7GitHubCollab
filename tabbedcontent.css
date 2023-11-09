@@ -1,0 +1,54 @@
+body {
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #E6E6FA;
+}
+.container {
+    margin: 40px;
+    margin-top: 20px;
+}
+
+/* dropdown stuff */
+.dropdown .trigger{
+    border-bottom: 1px solid purple;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    color: #663399;
+}
+.dropdown .trigger::after{
+    content: ">";
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: rotate(90deg) scale(0.5, 1);
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+.dropdown .trigger.active::after{
+    transform: rotate(-90deg) scale(0.5, 1);
+}
+.dropdown .content{
+    display: none;
+}
+.dropdown .content.active{
+    display: block;
+}
+img{
+    width: 400px;
+    height: auto;
+}
+h2{
+    text-align: center;
+    color: #663399;
+}
+h3{
+    color: #8821cc;
+}
+h4{
+    color: #ba55d3;
+}
+h5{
+    color: #Da70D6;
+}
